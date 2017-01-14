@@ -1,1 +1,1 @@
-Personal website, uses the [Plain](https://github.com/heiswayi/the-plain) theme.
+Personal website using the [Plain](https://github.com/heiswayi/the-plain) theme.
