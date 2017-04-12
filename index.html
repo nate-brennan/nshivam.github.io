@@ -19,32 +19,6 @@ h1, h2, h3, h4 {
   font-weight:lighter;
 }
 
-DIV.content
-{
-border: 0px solid #5f5f5f;
-width: 525px;
-margin: 0;
-padding: 1em;
-position: absolute;
-background-color: #FFFFFF;
-left: 240px;
-top: 50px;
-}
-
-DIV.bar
-{
-border: 0px solid #5f5f5f;
-width: 200px;
-height: 300px;
-margin: 0;
-padding: 0;
-position: absolute;
-left: 65px;
-top: 80px;
-text-align: right;
-}
-
-
 p.link
 {
 color: black;
@@ -75,81 +49,18 @@ text-decoration: none;
 font-weight: normal;;
 }
 
-#coursework
-{
-display: none;
-}
-
-#abstract
-{
-display: block;
-}
-
-#research
-{
-display: none;
-}
-
-#projects
-{
-display: none;
-}
-
-#media
-{
-display: none;
-}
-
-
 </STYLE>
 
-<SCRIPT type="text/javascript">
-
-function homeShow()
-{
-document.getElementById("abstract").style.display="block";
-document.getElementById("coursework").style.display="none";
-document.getElementById("projects").style.display="none";
-}
-
-function courseworkShow()
-{
-document.getElementById("coursework").style.display="block";
-document.getElementById("projects").style.display="none";
-document.getElementById("abstract").style.display="none";
-}
-
-function projectsShow()
-{
-document.getElementById("projects").style.display="block";
-document.getElementById("coursework").style.display="none";
-document.getElementById("abstract").style.display="none";
-}
-
-</SCRIPT>
 </HEAD>
 
 
 
 <BODY>
-
-<DIV class="bar">
-<P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
-<P class="link"><A href="#"	class="minlink" onclick="projectsShow();">Brief CV</A></P>
-<P class="link"><A href="#" class="minlink" onclick="courseworkShow();">Contact</A></P>
-</DIV>
-
-
-<DIV class="content">
-
-<DIV id="abstract">
 <h1> Shivam Nadimpalli </h1>
 <hr>
 <h3>I am a confused second-year undergraduate at Brown University, double concentrating in Mathematics and Biology.
 I enjoy road biking, squash, puzzles, and bubble tea.</h3>
-</DIV>
 
-<DIV id="projects">
 <h2>Brief CV</h2>
 <hr>
 <ul>
@@ -158,9 +69,7 @@ I enjoy road biking, squash, puzzles, and bubble tea.</h3>
 <li> I previously looked into proteins involved in dosage compensation as an undergraduate researcher
   with the Fawzi Lab at Brown University.
 </ul>
-</DIV>
 
-<DIV id="coursework">
 <h2>Contact</h2>
 <hr>
 You can reach me at: nadimpalli [at] brown [dot] edu.
