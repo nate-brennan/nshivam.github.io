@@ -1,34 +1,213 @@
 <!DOCTYPE html>
+<HEAD>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Shiv Nadimpalli</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    </head>
+<TITLE>Shiv Nadimpalli</TITLE>
 
-    <body>
-        <!-- Add your site or application content here -->
-        <header>
-            <h2 class="alpha">Shiv Nadimpalli</h2>
-            <h5>Confused sophomore at Brown University.</h5>
-        </header>
+<STYLE type="text/css">
 
-        <section id="latest">
-            <details>
-                <summary class="alpha">Brief CV</summary>
-                <ul style="list-style-type:none" class="beta">
-                    <li><dl>
-                            <dt><i>Education</i></dt>
-                            <dd>Brown University, AB Mathematics, AB Biology</dd>
-                            <dt>Work.</dt>
-                            <dd>LMAO.</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </details>
-        </section>
+body
+{
+margin: 20px;
+padding: 20px;
+font-family: Courier, Serif;
 
-    </body>
+}
+
+DIV.content
+{
+border: 0px solid #5f5f5f;
+width: 525px;
+margin: 0;
+padding: 1em;
+position: absolute;
+background-color: #FFFFFF;
+left: 240px;
+top: 50px;
+}
+
+DIV.bar
+{
+border: 0px solid #5f5f5f;
+width: 200px;
+height: 300px;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 65px;
+top: 80px;
+text-align: right;
+}
+
+
+p.link
+{
+color: black;
+font-family: Courier, Serif;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+}
+
+
+a:link, a:link.inlink, a:visited.inlink, a:visited
+{
+color: #0000FF;
+}
+
+
+a:link.minlink, a:visited.minlink
+{
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover, a:hover.inlink, a:hover.minlink
+{
+color: #EEC900;
+text-decoration: none;
+font-weight: bold;
+}
+
+#coursework
+{
+display: none;
+}
+
+#abstract
+{
+display: block;
+}
+
+#research
+{
+display: none;
+}
+
+#projects
+{
+display: none;
+}
+
+#media
+{
+display: none;
+}
+
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+
+function homeShow()
+{
+document.getElementById("abstract").style.display="block";
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function courseworkShow()
+{
+document.getElementById("coursework").style.display="block";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function researchShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="block";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function projectsShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("projects").style.display="block";
+document.getElementById("abstract").style.display="none";
+document.getElementById("media").style.display="none";
+}
+
+function mediaShow()
+{
+document.getElementById("coursework").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("media").style.display="block";
+document.getElementById("projects").style.display="none";
+document.getElementById("abstract").style.display="none";
+
+
+}
+
+</SCRIPT>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32460469-1']);
+  _gaq.push(['_trackPageview']);
+
+</script>
+</HEAD>
+
+
+<BODY>
+
+<DIV class="bar">
+
+
+<P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
+		   onclick="projectsShow();">Brief CV</A></P>
+<P class="link"><A href="#" class="minlink"
+		   onclick="courseworkShow();">Contact</A></P>
+
+</DIV>
+
+
+
+<DIV class="content">
+
+
+
+  <DIV id="abstract">
+
+<h2> Alison F. Feder </h2>
+<hr>
+
+I am a confused second-year undergraduate student at Brown University, double concentrating in Mathematics and Biology.
+I enjoy road biking, squash, puzzles, and bubble tea.
+  </DIV>
+
+<DIV id="coursework">
+
+<h2>Contact</h2>
+<hr>
+<ul>
+You can reach me at <a href= "mailto:nadimpalli@brown.edu">nadimpalli [at] brown [dot] edu</a>.
+</DIV>
+
+<DIV id="projects">
+
+<h2>Brief CV</h2>
+
+<hr>
+<ul>
+
+<li><b>Current: AB Mathematics, AB Biology, </b><br>Brown University, expected 2019<br>
+<li> I previously looked into proteins involved in dosage compensation as an undergraduate researcher
+  with the Fawzi Lab at Brown University. I am presently working with Dr. Ben Kunsberg in the Applied Mathematics
+  Dept. at Brown University.
+<li> In the fall semester, I am an undergraduate teaching assistant for BIOL0470: Genetics.
+</ul>
+</DIV>
+
+
+</BODY>
+
 </html>
