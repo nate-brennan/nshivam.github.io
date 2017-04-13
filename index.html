@@ -58,12 +58,14 @@ footer {
 
 @include solarized-light;
 
-.thumbnail:hover {
-    position:relative;
-    width:300px;
-    height:auto;
-    display:block;
-    z-index:999;
+figure {
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
 }
 
 
@@ -97,7 +99,7 @@ footer {
    </div>
    <div style="float:center;">
     <figure>
-       <a href=""><img src="sleepshiv.jpg" width=250px class="thumbnail"></a>
+       <a href=""><img src="sleepshiv.jpg" width=250px></a>
        <figcaption>A picture of me looking ethereal.</figcaption>
     </figure>
    </div>
