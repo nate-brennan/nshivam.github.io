@@ -58,6 +58,17 @@ footer {
 
 @include solarized-light;
 
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+
 </STYLE>
 
 </HEAD>
@@ -87,7 +98,9 @@ footer {
 
    </div>
    <div style="float:right;">
-   <img src="greenguy.png">"
+   <center>
+   <img src="greenguy.png" class="thumbnail">
+   </center>
    </div>
 </div>
 <div style="clear:both"></div>
